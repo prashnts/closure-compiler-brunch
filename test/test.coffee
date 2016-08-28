@@ -19,3 +19,4 @@ describe 'Plugin', ->
       .then (data) ->
         expect(data).to.eql(data: expected)
         done()
+    return 
