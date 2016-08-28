@@ -7,6 +7,7 @@ This plugin leverages the JavaScript implementation of Closure Compiler, hence _
 
 **`Experimental`**
 
+[![Build Status](https://travis-ci.org/prashnts/closure-compiler-brunch.svg?branch=master)](https://travis-ci.org/prashnts/closure-compiler-brunch)
 
 ## Usage
 Install the plugin via npm with:
