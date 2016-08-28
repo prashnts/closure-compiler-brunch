@@ -18,7 +18,6 @@ describe 'Plugin', ->
     plugin.optimize(data: content)
       .then (data) ->
         expect(data).to.eql(data: expected)
-        done()
       , done()
     return
 
@@ -41,4 +40,19 @@ describe 'Plugin', ->
     plugin.optimize(file)
       .then (data) ->
         expect(data).to.eql(expected)
+      , done()
+
+
+describe 'Plugin#Customized', ->
+  it 'should respect config opts', ->
+    plugin = new Plugin plugins: closurecompiler:
+      compilationLevel: 'ADVANCED'
+    expect(plugin.config.compilationLevel).to.eql 'ADVANCED'
+
+  it 'should not produce source map if configured', (done) ->
+    plugin = new Plugin plugins: closurecompiler: createSourceMap: no
+    file = data: 'const x = 1 + 2;'
+    plugin.optimize(file)
+      .then (data) ->
+        expect(data.map).to.not.be.ok
       , done()
