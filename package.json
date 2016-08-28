@@ -16,7 +16,11 @@
     "closure",
     "compiler"
   ],
-  "author": "Prashant Sinha (https://noop.pw)",
+  "author": {
+    "name": "Prashant Sinha",
+    "email": "prashant+npm@noop.pw",
+    "url": "https://noop.pw"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/prashnts/closure-compiler-brunch/issues"
