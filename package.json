@@ -1,6 +1,6 @@
 {
   "name": "closure-compiler-brunch",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "JavaScript optimizer with Closure Compiler in JS for Brunch files.",
   "main": "index.coffee",
   "scripts": {
