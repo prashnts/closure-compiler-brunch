@@ -8,6 +8,7 @@ This plugin leverages the JavaScript implementation of Closure Compiler, hence _
 **`Experimental`**
 
 [![Build Status](https://travis-ci.org/prashnts/closure-compiler-brunch.svg?branch=master)](https://travis-ci.org/prashnts/closure-compiler-brunch)
+[![npm](https://img.shields.io/npm/v/closure-compiler-brunch.svg)](https://www.npmjs.com/package/closure-compiler-brunch)
 
 ## Usage
 Install the plugin via npm with:
@@ -28,6 +29,9 @@ config =
 ```
 
 `compilationLevel` can either be `WHITESPACE_ONLY`, `SIMPLE`, or `ADVANCED`. 
+
+- [on npm](https://www.npmjs.com/package/closure-compiler-brunch)
+- [on github](https://github.com/prashnts/closure-compiler-brunch)
 
 ## License
 
