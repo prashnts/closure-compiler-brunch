@@ -1,3 +1,4 @@
+'use strict'
 {compile} = require 'google-closure-compiler-js'
 
 
@@ -6,8 +7,8 @@ class ClosureCompiler
   type: 'javascript'
   extension: 'js'
 
-  constructor: (config = {}) ->
-    @config = Object.assign @defaultFlags, config.plugins?.closurecompiler
+  constructor: (config) ->
+    @config = Object.assign @defaultFlags, config.plugins.closurecompiler
 
   defaultFlags:
     compilationLevel: 'SIMPLE'
@@ -24,7 +25,7 @@ class ClosureCompiler
     try
       optimized = compile flags
     catch err
-      return Promise.reject  er
+      return Promise.reject err
     finally
       unless optimized.errors.length is 0
         return Promise.reject JSON.stringify optimized.errors, null, 2
