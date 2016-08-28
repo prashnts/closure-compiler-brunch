@@ -24,10 +24,10 @@ class ClosureCompiler
     try
       optimized = compile flags
     catch err
-      return Promise.reject err
+      return Promise.reject  er
     finally
       unless optimized.errors.length is 0
-        return Promise.reject optimized.errors.join '\n'
+        return Promise.reject JSON.stringify optimized.errors, null, 2
       else
         result = data: optimized.compiledCode
         if @config.createSourceMap
