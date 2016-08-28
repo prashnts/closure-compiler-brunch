@@ -1,27 +1,26 @@
+'use strict'
 {expect} = require 'chai'
 Plugin = require '../'
 
 describe 'Plugin', ->
   plugin = null
 
-  beforeEach -> plugin = new Plugin
+  beforeEach -> plugin = new Plugin plugins: {}
 
   it 'should be an object', ->
-    expect(plugin).to.be.ok
+    expect(plugin).to.be.an 'object'
 
   it 'should have #optimize method', ->
-    expect(plugin.optimize).to.be.an.instanceOf Function
+    expect(plugin).to.respondTo 'optimize'
 
-  it 'should compile correctly', (done) ->
+  it 'should compile correctly', ->
     content = 'const x = 1 + 2;'
     expected = 'var x=3;'
     plugin.optimize(data: content)
-      .then (data) ->
-        expect(data).to.eql(data: expected)
-      , done()
-    return
+      .then (result) ->
+        expect(result.data).to.equal(expected)
 
-  it 'should produce source maps', (done) ->
+  it 'should produce source maps', ->
     content = """
     (function() {
       var foo = 10;
@@ -40,19 +39,17 @@ describe 'Plugin', ->
     plugin.optimize(file)
       .then (data) ->
         expect(data).to.eql(expected)
-      , done()
 
 
 describe 'Plugin#Customized', ->
   it 'should respect config opts', ->
     plugin = new Plugin plugins: closurecompiler:
       compilationLevel: 'ADVANCED'
-    expect(plugin.config.compilationLevel).to.eql 'ADVANCED'
+    expect(plugin.config.compilationLevel).to.equal 'ADVANCED'
 
-  it 'should not produce source map if configured', (done) ->
+  it 'should not produce source map if configured', ->
     plugin = new Plugin plugins: closurecompiler: createSourceMap: no
     file = data: 'const x = 1 + 2;'
     plugin.optimize(file)
       .then (data) ->
         expect(data.map).to.not.be.ok
-      , done()
