@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 - Bugfixes, test updates by @shvaikalesh in #1.
 - Typo in the `README.md`.
+
 ### Added
 - Added @shvaikalesh in `package.json` contributors.
 
