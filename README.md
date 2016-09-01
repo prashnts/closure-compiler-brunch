@@ -8,13 +8,16 @@ This plugin leverages the JavaScript implementation of Closure Compiler, hence _
 **`Experimental`**
 
 [![Build Status](https://travis-ci.org/prashnts/closure-compiler-brunch.svg?branch=master)](https://travis-ci.org/prashnts/closure-compiler-brunch)
-[![npm](https://img.shields.io/npm/v/closure-compiler-brunch.svg)](https://www.npmjs.com/package/closure-compiler-brunch)
+
+[![NPM](https://nodei.co/npm/closure-compiler-brunch.png?mini=true)](https://nodei.co/npm/closure-compiler-brunch/)
 
 ## Usage
 Install the plugin via npm with:
 ```
 npm install --save closure-compiler-brunch
 ```
+
+**Important**: ES6 required. `node <= 4.X.X` not supported without `harmony` flag. See [node green](http://node.green/). 
 
 The optimizations are applied in production builds by default. You can supply `-p` flag with your build command. 
 
