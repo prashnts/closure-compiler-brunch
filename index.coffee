@@ -1,5 +1,5 @@
 'use strict'
-{compile} = require 'google-closure-compiler-js'
+compile = require 'google-closure-compiler-js/compile'
 
 
 class ClosureCompiler

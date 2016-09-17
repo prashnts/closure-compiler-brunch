@@ -29,7 +29,7 @@ describe 'Plugin', ->
     """
     expected =
       data: '(function(){window.bar=100})();'
-      map: """{\n"version":3,\n"file":"IGNORED",\n"lineCount":1,
+      map: """{\n"version":3,\n"file":"",\n"lineCount":1,
           "mappings":"AAAC,SAAQ,EAAG,CAEVA,MAAAC,IAAA,CAAa,GAFH,CAAX,CAAD;",
           "sources":["file.js"],\n"names":["window","bar"]\n}\n
           """
