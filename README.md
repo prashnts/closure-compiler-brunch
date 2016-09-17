@@ -8,6 +8,7 @@ This plugin leverages the JavaScript implementation of Closure Compiler, hence _
 **`Experimental`**
 
 [![Build Status](https://travis-ci.org/prashnts/closure-compiler-brunch.svg?branch=master)](https://travis-ci.org/prashnts/closure-compiler-brunch)
+[![Test Coverage](https://codeclimate.com/github/prashnts/closure-compiler-brunch/badges/coverage.svg)](https://codeclimate.com/github/prashnts/closure-compiler-brunch/coverage)
 
 [![NPM](https://nodei.co/npm/closure-compiler-brunch.png?mini=true)](https://nodei.co/npm/closure-compiler-brunch/)
 
