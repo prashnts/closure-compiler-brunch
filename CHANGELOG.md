@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [Unreleased]
+## Changed
+- Added `node@v5` as a build target.
+
+
 ## [0.1.3] - 2016-09-17
 ### Changed
 - Build timeouts increased to 35s from 15s in tests.
