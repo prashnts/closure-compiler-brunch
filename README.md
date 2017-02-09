@@ -1,4 +1,6 @@
 ## closure-compiler-brunch
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/prashnts/closure-compiler-brunch.svg)](https://greenkeeper.io/)
 Adds [Closure Compiler JS](https://github.com/google/closure-compiler-js) support to [brunch](http://brunch.io).
 
 The Closure Compiler tool can produce highly optimized JavaScript code by static analysis, dead code removal and minification.
