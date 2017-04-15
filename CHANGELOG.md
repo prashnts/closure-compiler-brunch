@@ -5,10 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased]
-## Changed
+## [0.1.4] - 2017-04-16
+### Added
+- `yarn` lockfile.
+
+### Changed
 - Added `node@v5` as a build target.
 - Test coverage.
+- Update `closure-compiler` version.
 
 ## Fixed
 - `mocha.opts` did not have `istanbul` registered, hence coverage was not reported.
@@ -53,7 +57,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 
 
-[Unreleased]: https://github.com/prashnts/closure-compiler-brunch/compare/0.1.3...HEAD
+[0.1.4]: https://github.com/prashnts/closure-compiler-brunch/compare/0.1.3...0.1.4
 [0.1.3]: https://github.com/prashnts/closure-compiler-brunch/compare/0.1.2...0.1.3
 [0.1.2]: https://github.com/prashnts/closure-compiler-brunch/compare/0.1.1...0.1.2
 [0.1.1]: https://github.com/prashnts/closure-compiler-brunch/compare/0.1.0...0.1.1
