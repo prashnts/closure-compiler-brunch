@@ -38,6 +38,6 @@
     "mocha": "^3.0.2"
   },
   "dependencies": {
-    "google-closure-compiler-js": "^20170409.0.0"
+    "google-closure-compiler-js": "^20170423.0.0"
   }
 }
