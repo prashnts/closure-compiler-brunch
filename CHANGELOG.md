@@ -5,9 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [0.1.5] - 2017-08-02
+## [0.1.6] - 2017-08-02
 ### Changed
 - Upgrade closure copiler to the latest version.
+
+Note: v0.1.5 was yanked.
 
 
 ## [0.1.4] - 2017-04-16
@@ -62,7 +64,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 
 
-[0.1.5]: https://github.com/prashnts/closure-compiler-brunch/compare/0.1.5...0.1.5
+[0.1.6]: https://github.com/prashnts/closure-compiler-brunch/compare/0.1.6...0.1.6
 [0.1.4]: https://github.com/prashnts/closure-compiler-brunch/compare/0.1.3...0.1.4
 [0.1.3]: https://github.com/prashnts/closure-compiler-brunch/compare/0.1.2...0.1.3
 [0.1.2]: https://github.com/prashnts/closure-compiler-brunch/compare/0.1.1...0.1.2
