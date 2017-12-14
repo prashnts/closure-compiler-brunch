@@ -35,7 +35,7 @@
     "coffee-coverage": "^2.0.0",
     "coffee-script": "^1.10.0",
     "istanbul": "^0.4.5",
-    "mocha": "^3.0.2"
+    "mocha": "^4.0.0"
   },
   "dependencies": {
     "google-closure-compiler-js": "^20170626.0.0"
